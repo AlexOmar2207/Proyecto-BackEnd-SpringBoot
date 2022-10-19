@@ -26,6 +26,9 @@ public class Persona {
 	private Integer edad;
 	
 	
+	@ManyToOne
+	@JoinColumn(name="idSexo")
+	private Sexo sexo;
 	
 	@ManyToOne
 	@JoinColumn(name="idPais")
@@ -71,6 +74,14 @@ public class Persona {
 	
 	public void setPais(Pais pais) {
 		this.pais = pais;
+	}
+	
+	public Sexo getSexo() {
+		return sexo;
+	}
+	
+	public void setSexo(Sexo sexo) {
+		this.sexo = sexo;
 	}
 	
 	

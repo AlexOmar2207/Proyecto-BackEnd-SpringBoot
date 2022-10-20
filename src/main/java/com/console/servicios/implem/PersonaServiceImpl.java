@@ -25,7 +25,8 @@ public class PersonaServiceImpl implements IPersonaServices{
 	public Persona registrar(Persona persona) {
 		return repo.save(persona);
 	}
-
+	
+	
 	@Override
 	public Persona actualizar(Persona persona) {
 		return repo.save(persona);
@@ -45,10 +46,5 @@ public class PersonaServiceImpl implements IPersonaServices{
 	public Page<Persona> listPageable(Pageable pageable) {
 		return repo.findAll(pageable);
 	}
-
-
-	
-	
-	
 
 }
